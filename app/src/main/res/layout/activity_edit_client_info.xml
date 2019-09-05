@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:orientation="vertical"
+        tools:context="cs.b07.group_0501.EditClientInfoActivity">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Last Name:"
+            android:id="@+id/LastNameText"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="Last Name"
+            android:ems="10"
+            android:id="@+id/newLastName"
+            android:layout_below="@+id/LastNameText" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="First Name:"
+            android:id="@+id/FirstNameText"
+            android:layout_below="@+id/newLastName"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="@string/first_name"
+            android:ems="10"
+            android:id="@+id/newFirstName"
+            android:layout_below="@+id/FirstNameText" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email:"
+            android:id="@+id/emailText"
+            android:layout_below="@id/newFirstName"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:hint="@string/email"
+            android:ems="10"
+            android:id="@+id/newEmail"
+            android:layout_below="@+id/emailText" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Address:"
+            android:id="@+id/addressText"
+            android:layout_below="@id/newEmail"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPostalAddress"
+            android:ems="10"
+            android:id="@+id/newAddress"
+            android:hint="@string/address"
+            android:layout_below="@+id/addressText" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CreditCard Number:"
+            android:id="@+id/creditCardNumberText"
+            android:layout_below="@+id/newAddress"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/newCreditCardNumber"
+            android:hint="@string/credit_card_num"
+            android:layout_below="@+id/creditCardNumberText" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Expiry Date:YYYY-MM-DD"
+            android:id="@+id/expiryDateText"
+            android:layout_below="@+id/newCreditCardNumber"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:hint="@string/expiry_date"
+            android:ems="10"
+            android:id="@+id/newExpiryDate"
+            android:layout_below="@+id/expiryDateText" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/save_changes"
+            android:id="@+id/save_changes"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/newExpiryDate"
+            android:onClick="editSelfInfo"/>
+    </RelativeLayout>
+</ScrollView>
+
+
